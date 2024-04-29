@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Mantente organizado con nuestro calendario fácil de usar que incluye eventos, recordatorios y una interfaz personalizable. Construido con HTML, CSS y JavaScript. ¡Comienza a programar hoy mismo!"/>
+    <meta name="keywords" content="calendario, eventos, recordatorios, javascript, html, css, programación de código abierto"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="calender.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Ubuntu&display=swap" rel="stylesheet">
+    <script defer src="calender.js"></script>
+
+    <!-- Título de la página -->
+    <title>Calender</title>
+  </head>
+  <body>
+
+    <!--HEADER RESPONSIVE-->
+
+    <header class="header">
+      <div class="logo">
+          <img src="/img/logo.png" alt="Logo de Student-King">
+      </div>
+          <nav>
+              <div class="nav-menu">
+
+                  <input type="checkbox" id="check">
+                  <label for="check" class="checkbtn">
+                      <i class="menu-icon"><img src="https://cdn-icons-png.flaticon.com/512/5629/5629505.png" alt=""></i>
+                  </label>
+
+
+                  <ul class="nav-links">
+                      <li><a href="/inicio/inicio.html">Inicio</a></li>
+                      <li><a href="/recordering/recordering.html">Recordering</a></li>
+                      <li><a href="/calender/calender.html">Calender</a></li>
+                      <li><a href="/reloying/reloying.html">Reloying</a></li>
+                      <li><a href="/testimonios/testimonios.html">Testimonios</a></li>
+                      <li><a href="/index.html">Cuenta</a></li>
+                      <li><a href="/sobre-mi/sobre-mi.html">Sobre Mi</a></li>
+                  </ul>
+              </div>
+          </nav>
+  </header>
+  
+<!-- FIN DE HEADER RESPONSIVE-->
+
+    <div class="bienvenida">
+      <h1>Bienvenido a <span style="color: indigo;">Calender</span></h1>
+
+      <p>Bienvenido al Calendario de Compromisos de Student-King, donde la organización se combina con la simplicidad para brindarte el control total sobre tu agenda académica y personal. Con nuestra herramienta integrada, podrás planificar tus días con facilidad, añadiendo eventos importantes como clases, exámenes, reuniones y más en un instante. Mantén tu vida sincronizada y nunca te pierdas un compromiso crucial gracias a nuestras notificaciones automáticas que te mantendrán informado en todo momento. Con el Calendario de Compromisos de Student-King, la gestión de tu tiempo nunca ha sido tan eficiente y sin complicaciones.</p>
+    </div>
+
+    <div class="container">  <!-- Contenedor principal -->
+      
+      <!-- Sección izquierda -->
+      <div class="left">
+
+        <div class="calendar">  <!-- Calendario -->
+
+          <!-- Encabezado del mes -->
+          <div class="month">
+            <i class="fas fa-angle-left prev"></i>
+            <div class="date">abril 2024</div>
+            <i class="fas fa-angle-right next"></i>
+          </div>
+
+
+          <!-- Días de la semana -->
+          <div class="weekdays">
+            <div>Dom</div>
+            <div>Lun</div>
+            <div>Mar</div>
+            <div>Mié</div>
+            <div>Jue</div>
+            <div>Vie</div>
+            <div>Sáb</div>
+          </div>
+
+          <div class="days">
+            <!-- Días del mes -->
+          </div>
+
+          <!-- Navegación al día de hoy -->
+          <div class="goto-today">
+            <div class="goto">
+              <input type="text" placeholder="mm/aaaa" class="date-input" />
+              <button class="goto-btn">Ir</button>
+            </div>
+            <button class="today-btn">Hoy</button>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Sección derecha -->
+      <div class="right">
+
+        <!-- Fecha actual -->
+        <div class="today-date">
+          <div class="event-day">mié</div>
+          <div class="event-date">29 abril 2024</div>
+        </div>
+        
+        <div class="events">
+          <!-- Lista de eventos -->
+        </div>
+
+        <!-- Formulario para añadir evento -->
+        <div class="add-event-wrapper">
+          <div class="add-event-header">
+            <div class="title">Agregar Evento</div>
+            <i class="fas fa-times close"></i>
+          </div>
+          <div class="add-event-body">
+            <div class="add-event-input">
+              <input type="text" placeholder="Nombre del Evento" class="event-name" />
+            </div>
+            <div class="add-event-input">
+              <input
+                type="text"
+                placeholder="Hora de Inicio del Evento"
+                class="event-time-from"
+              />
+            </div>
+            <div class="add-event-input">
+              <input
+                type="text"
+                placeholder="Hora de Finalización del Evento"
+                class="event-time-to"
+              />
+            </div>
+          </div>
+          <div class="add-event-footer">
+            <button class="add-event-btn">Agregar Evento</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Botón para añadir evento -->
+      <button class="add-event">
+        <i class="fas fa-plus"></i>
+      </button>
+    </div>
+
+  </body>
+</html>

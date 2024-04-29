@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Temporizador</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.7/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="reloying.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Ubuntu&display=swap" rel="stylesheet">
+    <script defer src="/reloying/reloying.js"></script>
+</head>
+
+<body>
+
+    <!--HEADER RESPONSIVE-->
+
+    <header class="header">
+        <div class="logo">
+            <img src="/img/logo.png" alt="Logo de Student-King">
+        </div>
+            <nav>
+                <div class="nav-menu">
+
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <i class="menu-icon"><img src="https://cdn-icons-png.flaticon.com/512/5629/5629505.png" alt=""></i>
+                    </label>
+
+
+                    <ul class="nav-links">
+                        <li><a href="/inicio/inicio.html">Inicio</a></li>
+                        <li><a href="/recordering/recordering.html">Recordering</a></li>
+                        <li><a href="/calender/calender.html">Calender</a></li>
+                        <li><a href="/reloying/reloying.html">Reloying</a></li>
+                        <li><a href="/testimonios/testimonios.html">Testimonios</a></li>
+                        <li><a href="/index.html">Cuenta</a></li>
+                        <li><a href="/sobre-mi/sobre-mi.html">Sobre Mi</a></li>
+                    </ul>
+                </div>
+            </nav>
+    </header>
+    
+    <!-- FIN DE HEADER RESPONSIVE-->
+
+    <!-- Contenido del Reloj de Estudio -->
+    <section class="reloying-section">
+        <h2>Bienvenido al Reloj de Estudio de Student-King</h2>
+        <p>En esta sección, te ofrecemos una herramienta poderosa para maximizar tu tiempo de estudio y mejorar tu productividad académica. Nuestro Reloj de Estudio te permite enfocarte en tus tareas y mantener un ritmo constante de trabajo. Aquí te explicamos cómo sacarle el máximo provecho:</p>
+        <ul>
+            <li>Establece tus Sesiones de Estudio.</li>
+            <li>Sigue tu Progreso.</li>
+            <li>Personaliza tu Experiencia.</li>
+            <li>Mantén el Enfoque.</li>
+            <li>Aprovecha al Máximo tu Tiempo.</li>
+        </ul>
+        <p>¡Prepárate para mejorar tu productividad y conquistar tus objetivos académicos con el Reloj de Estudio de Student-King! ¡Empieza a estudiar de manera inteligente hoy mismo!</p>
+    </section>
+
+    <!-- Contenedor del Reloj de Estudio -->
+    <div class="contenedor">
+        <div class="moneda" id="moneda" onclick="tomarTiempo()">
+            <div class="lado frente" id="frente"></div>
+            <div class="lado atras" id="atras"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

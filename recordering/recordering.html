@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="recordering.css">
+    <script defer src="recordering.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Ubuntu&display=swap" rel="stylesheet">
+    <title>Recordering</title>  
+</head>
+<body>
+
+        <!--HEADER RESPONSIVE-->
+
+        <header class="header">
+            <div class="logo">
+                <img src="/img/logo.png" alt="Logo de Student-King">
+            </div>
+                <nav>
+                    <div class="nav-menu">
+
+                        <input type="checkbox" id="check">
+                        <label for="check" class="checkbtn">
+                            <i class="menu-icon"><img src="https://cdn-icons-png.flaticon.com/512/5629/5629505.png" alt=""></i>
+                        </label>
+
+
+                        <ul class="nav-links">
+                            <li><a href="/inicio/inicio.html">Inicio</a></li>
+                            <li><a href="/recordering/recordering.html">Recordering</a></li>
+                            <li><a href="/calender/calender.html">Calender</a></li>
+                            <li><a href="/reloying/reloying.html">Reloying</a></li>
+                            <li><a href="/sobre-mi/sobre-mi.html">Sobre Mi</a></li>
+                            <li><a href="/testimonios/testimonios.html">Testimonios</a></li>
+                            <li><a href="/index.html">Cuenta</a></li>
+                            <li><a href="/sobre-mi/sobre-mi.html">Sobre Mi</a></li>
+                        </ul>
+                    </div>
+                </nav>
+        </header>
+        
+    <!-- FIN DE HEADER RESPONSIVE-->
+    
+<div class="container">
+    <div class="perfil">
+        <div id="fecha"></div>
+        <h1>Bienvenido a Recordering</h1>
+        <span>¡Vamos a cumplir tus metas!</span>
+    </div>
+
+    <div class="agregar-tarea">
+        <input type="text" id="input" placeholder="agregar una tarea">
+        <i id="boton-enter"class="fas fa-plus-circle"></i>
+    </div>
+
+    
+    <div class="seccion-tarea">
+        <h3>Estas son tus Tareas Pendientes: </h3>
+        <ul id="lista">
+
+
+            <!-- AQUI SE COLOCARAN LAS TAREAS -->
+
+
+        </ul>
+    </div>   
+</div>
+</body>
+</html>
