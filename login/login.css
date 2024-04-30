@@ -46,6 +46,7 @@ body{
     font-size: 13px;
     text-decoration: none;
     margin: 15px 0 10px;
+    text-align: center;
 }
 
 .contenedor .button, .oculto{
@@ -267,5 +268,20 @@ body{
 
     .contenedor input {
         width: 190%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .contenedor button.oculto {
+        width: 150%;
+        padding: 10% 0%;
+    }
+    
+    .contenedor p {
+        width: 150%;
+    }
+    
+    .contenedor span {
+        text-align: center;
     }
 }
